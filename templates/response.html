@@ -1,0 +1,17 @@
+<body>
+    <h2>Class name {{class_name}}, Confidence  {{confidence}}<h2>
+  </body>
+ 
+ <body>
+     <h1> Choose original result <h1>
+ </body>
+ 
+<form class="form-inline" method="POST">
+    <select name="comp_select" class="selectpicker form-control">
+        {% for class_i in class_names %}
+        <option value="{{class_i}}">{{class_i}}</option>
+        {% endfor %}
+    </select>
+    <button type="submit" name="submit_button" class="btn btn-default" value="Save">Select</button>
+    <button type="submit" name="submit_button" class="btn btn-default" value="Delete">Skip</button>
+</form>
